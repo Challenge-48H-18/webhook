@@ -1,0 +1,10 @@
+{
+    "post": {
+        "id": 1,
+        "title": "Test Json",
+        "description": "UwU",
+        "tags": "general",
+        "user_id": 1,
+        "link": "https://www.youtube.com"
+    }
+}
