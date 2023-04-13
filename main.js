@@ -31,9 +31,19 @@ function sendMessage(message) {
 
   request.setRequestHeader('Content-type', 'application/json');
 
+  const myEmbed = {
+    title: "Test",
+    description: message,
+    color: hexToDecimal("#ff0000")
+  }
+
   const params = {
-    content: message
+    embeds: [myEmbed]
   }
 
   request.send(JSON.stringify(params));
+}
+
+function hexToDecimal(hex) {
+  return parseInt(hex.replace("#",""), 16)
 }
